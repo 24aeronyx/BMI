@@ -168,7 +168,7 @@ button.calculate:hover{
 .comment{
     display:none;
     font-size: 20px;
-    border: dashed 4px;
+    border: solid 1px;
     border-radius: 7px;
     padding: 5px;
     width: 100%;
