@@ -7,21 +7,36 @@
     <title>BMI Calculator by Ariel</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h1>BMI Calculator</h1>
-            <div class="content">
-                <div class="containerWH"></div>
-                <div class="inputW">
-                    <label for="weight">Weight(kg)</label>
-                    <input type="number" id="weight" required>
+        <div class="container">
+            <div class="box">
+                <h1>Kalkulator BMI</h1>
+                <div class="content">
+                    <div class="containerWH">
+                        <div class="inputW">
+                            <label for="weight">Berat(kg)</label>
+                            <input type="number" id="weight" required>
+                        </div>
+                        <div class="inputH">
+                            <label for="height">Tinggi(cm)</label>
+                            <input type="number" id="height" required>
+                        </div>
+                    </div>
+                    <button class="calculate" id="submit" onclick="calculate();">Hitung BMI</button>
                 </div>
-                <div class="inputH">
-                    <label for="height">Height(cm)</label>
-                    <input type="number" id="height" required>
+                <div class="result">
+                    <p>BMI kamu adalah</p>
                 </div>
-            </div>
+                <div class="footer">
+                    <footer>#SkilvulGacor</footer>
+                </div>
+            </div>     
         </div>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modaltext"></p>
     </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
