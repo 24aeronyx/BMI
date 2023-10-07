@@ -1,3 +1,4 @@
+document.body.style.zoom="80%"
 let weight = document.getElementById("weight");
 let height = document.getElementById("height");
 let resultArea = document.querySelector(".comment");
