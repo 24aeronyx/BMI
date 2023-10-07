@@ -17,23 +17,32 @@ function calculate() {
 }
 
 function countBMI() {
-  let BMI = (weight / (height / 100)) * 2;
+  let BMI = weight.value / (height.value / 100) ** 2;
   let result = "";
   if (BMI < 18.5) {
     result = "Kekurangan Berat Badan";
-  } else if (BMI >= 18.5 && BMI <= 24.9) {
-    result = "Normal";
+    document.querySelector(
+      ".comment"
+    ).innerHTML = `Kamu <span style="color:red" id="comment">${result}</span>`;
+  } else if (18.5 <= BMI && BMI <= 24.9) {
+    result = "Sehat";
+    document.querySelector(
+      ".comment"
+    ).innerHTML = `Kamu <span style="color:blue" id="comment">${result}</span>`;
   } else if (25 <= BMI && BMI <= 29.9) {
     result = "Kelebihan Berat Badan";
-  } else if (30 <= BMI && BMI <= 34.9) {
+    document.querySelector(
+      ".comment"
+    ).innerHTML = `Kamu <span style="color:red" id="comment">${result}</span>`;
+  } else if (BMI > 30) {
     result = "Obesitas";
+    document.querySelector(
+      ".comment"
+    ).innerHTML = `Kamu <span style="color:darkred" id="comment">${result}</span>`;
   }
 
   resultArea.style.display = "block";
-  document.querySelector(
-    ".comment"
-  ).innerHTML = `Kamu <span id="comment">${result}</span>`;
-  document.querySelector("#result").innerHTML = BMI;
+  document.querySelector("#result").innerHTML = BMI.toFixed(2);
 }
 
 span.onclick = function () {

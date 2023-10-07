@@ -6,10 +6,6 @@
     box-sizing:border-box;
     font-family: 'Hind';
 }
-.container{
-    border-radius: 20px;
-    
-}
 
 .content{
     background-color: white;
@@ -31,6 +27,7 @@ body{
     background: white;
     text-align: center;
     border: solid;
+    border-radius: 15px;
     
 }
 
@@ -52,7 +49,7 @@ p{
 
 .containerWH label{
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600px;
     color: black;
     margin-bottom: 20px;
@@ -61,7 +58,6 @@ p{
 .containerWH input{
     outline:none;
     border:none;
-    border-bottom: 1px solid black;
     width: 50%;
     text-align:center;
     font-size:28px;
@@ -71,13 +67,14 @@ p{
 .inputW{
     background: white;
     border-radius: 12px;
+    font-size: 20px;
     padding: 10px 0;
     margin-bottom: 20px
 }
 
 .inputW label{
     display:block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     margin-bottom: 20px;
@@ -95,6 +92,7 @@ p{
 
 .inputH{
     background: white;
+    font-size: 20px;
     border-radius: 12px;
     padding: 10px 0;
     margin-bottom: 20px
@@ -102,7 +100,7 @@ p{
 
 .inputH label{
     display:block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     margin-bottom: 20px;
@@ -128,7 +126,7 @@ button.calculate{
     cursor: pointer;
     color: white;
     background: black;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 7px;
     padding: 12px 0;
     width: 50%;
@@ -142,9 +140,6 @@ button.calculate:hover{
 
 .result{
     padding: 10px 20px;
-
-}
-.result r{
     font-weight: 600;
     font-size: 22px;
     color: black;
@@ -158,16 +153,21 @@ button.calculate:hover{
     background-color: white;
     display: inline-block;
     padding: 7px 20px;
-    border-radius: 55px;
     margin-bottom: 25px;
 }
 .result #hasil{
     font-size: 20px;
 }
+
+#comment{
+    color: rgb(8, 116, 178);
+    font-weight: 800;
+    
+}
 .comment{
     display:none;
     font-size: 20px;
-    border: dashed 1px;
+    border: dashed 4px;
     border-radius: 7px;
     padding: 5px;
     width: 100%;
@@ -188,7 +188,7 @@ button.calculate:hover{
     background-color: white;
     margin: auto;
     padding: 20px;
-    border: 1px solid grey;
+    border: 1px solid black;
     width: 600px;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.15); 
@@ -218,7 +218,6 @@ button.calculate:hover{
 
 .close{
     cursor: pointer;
-
 }
 
 @media(max-width: 700px){
