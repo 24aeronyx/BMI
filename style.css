@@ -5,7 +5,6 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Hind';
-    zoom: 95%;
 }
 
 .content{
@@ -20,6 +19,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: white;
+    padding: 20px;
 }
 
 .box{
@@ -89,6 +89,7 @@ p{
     text-align: center;
     font-size: 20px;
     font-family: "Hind";
+    color: black;
 }
 
 .inputH{
@@ -115,6 +116,7 @@ p{
     text-align: center;
     font-size: 20px;
     font-family: "Hind";
+    color: black;
 }
 #weight{
     background-color: white;
